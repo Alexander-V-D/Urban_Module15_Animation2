@@ -55,6 +55,7 @@ class CartActivity : AppCompatActivity() {
             intent.putExtra("products", productCartList.toTypedArray())
             cartFAB.startAnimation(roleOutAnim)
             startActivity(intent)
+            finish()
         }
 
         cartFAB.startAnimation(roleInAnim)
